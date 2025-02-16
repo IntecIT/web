@@ -1,0 +1,575 @@
+/* INICIO LUIS TAIPE */
+/* Selector Universal */
+*
+{margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+box-sizing: border-box;
+text-decoration: none;
+/* max-width: 100%; */
+}
+body
+{background-color: white;}
+
+/* ENCABEZADO */
+.header
+{display: flex;
+justify-content: space-between;
+align-items: center;
+background-image: linear-gradient(rgb(11, 105, 107),white);
+width: 100%;
+height: 110px;
+padding: 60px;}
+.logo img
+{height: 220px;
+width: 300px;}
+.info
+{display: flex;
+gap: 30px;
+align-items: center;}
+.contacto,.horario
+{display: flex;
+flex-direction: column;
+/* align-items: center;  */
+gap: 6px;}
+.contacto a,.horario span
+{color: white;
+font-weight: bold;
+text-decoration: none;
+font-size: 15px;}
+.contacto a
+{color: white;
+transition: color 0.3s;}
+.contacto a:hover
+{color: #337ab7;}
+.boton
+{margin-right: 100px;
+margin-left: -400px;
+}
+.mensaje
+{background: rgb(4, 68, 80);
+color: white;
+padding:  15px;
+text-decoration: none;
+font-weight: bold;
+border-radius: 7px;
+transition: background 0.3s;
+margin-bottom: 10px;}
+.mensaje:hover
+{background: #333333;}
+/* FIN DE ENCABEZADO */
+
+/* BARRA DE MENÚ */
+.barra
+{background-color: white;
+padding: 15px 0;
+text-align: center;}
+
+.barra ul
+{list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px;}
+
+.barra ul li
+{display: inline;}
+
+.barra ul li a
+{text-decoration: none;
+padding: 10px 15px;}
+.barra a{
+    color: black;
+    transition: font-size 0.3s;
+}
+.barra a:hover{
+    color: rgb(135, 115, 43);
+    font-size: 16px;
+}
+
+p{
+    font-size: 13px;
+    font-weight: bold;
+}
+a{
+    font-size: 11px;
+    font-weight: bold;
+}
+/* FIN DE BARRA DE MENÚ */
+
+/* INICIO DE MENÚ */
+.barra3 {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background-color: wheat;
+color: black;
+}
+
+.barra3 h2 {
+margin-bottom: 10px;
+margin-top: 20px;
+}
+
+.barra3 ul {
+/* padding: 0; */
+margin: 0 0 10px 0;
+list-style: none;
+}
+
+.boton2 {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.texto2{
+text-align: center;
+/* margin-top: 5px; */
+/* margin-bottom: 5px; */
+background-color:rgb(4, 68, 80);
+color: white;
+}
+.centrar {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.centrar article {
+max-width: 300px; 
+text-align: center;
+margin: 20px;
+}
+
+.centrar img {
+width: 100%;
+height: 200px;
+border-radius: 10px;
+}
+
+.centrar figcaption 
+{font-weight: bold;}
+
+.centrar p {
+margin: 10px 0;
+}
+
+.centrar a 
+{display: inline-block;
+padding: 10px 15px;
+background-color: black;
+color: white;
+border-radius: 5px;
+transition: background-color 0.3s;}
+.centrar a:hover 
+{background-color: #333;}
+/* FIN DE MENÚ */
+
+/* PIE DE PAGINA */
+/* INICIO DE FOOTER1 */
+.footer
+{background-color: #212121;
+color: white;}
+.redes
+{margin-top: 10px;}
+.redes a img
+{margin-right: 10px;
+transition: transform 0.03;}
+.redes a:hover img
+{transform: scale(1.1);}
+.footer1
+{padding: 40px 40px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+text-align: left;
+font-size: 13px;}
+.col
+{flex: 1;
+max-width: 20%;}
+.col a
+{color: white;
+transition: color 0.3s;}
+.col a:hover
+{color: #337ab7;}
+.col li
+{padding-top: 3px;}
+.footer1 h4
+{margin-bottom: 15px;
+font-size: 15px;
+color: #eed7ae;}
+.footer1 ul
+{list-style: none;
+text-decoration: underline;}
+/* TERMINA EL FOOTER1 */
+
+/* INICIO DE FOOTER2 */
+.footer2
+{background-color: black;
+color: white;
+padding: 18px 170px;
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+.footer2 p
+{text-align: left;
+font-size: 13px;
+padding: 8px;
+color: #ada9a9;}
+.slash
+{list-style: none;
+display: flex;
+gap: 5px;}
+.slash li a
+{color: #ada9a9;
+transition: color 0.3s;
+font-size: 13px;
+padding-right: 10px;}
+.slash li a:hover
+{color: #337ab7;}
+.slash li:not(:last-child)::after
+{content: "/";
+color: white;}
+.intec
+{color: #ada9a9;
+transition: color 0.3s;}
+.intec:hover
+{color:#337ab7 ;}
+/* TERMINA EL FOOTER2 */
+
+/* Contenedor principal del carrusel */
+.movimiento {
+    width: 100%; /* Ocupa el 100% del ancho de la página */
+    height: 60vh; /* Altura del carrusel */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin padding */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative; /* Posiciona los elementos hijos de manera relativa */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho */
+}
+
+/* Lista de imágenes del carrusel */
+.movimiento ul {
+    display: flex; /* Muestra los elementos en una fila */
+    padding: 0;
+    margin: 0; /* Sin márgenes */
+    width: 300%; /* 100% por imagen, 3 imágenes en total */
+    animation: slide 15s infinite; /* Aplica la animación de deslizamiento */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho */
+}
+
+/* Elementos de la lista (imágenes) */
+.movimiento li {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    list-style: none; /* Elimina los puntos de la lista */
+    position: relative; /* Posiciona los elementos hijos de manera relativa */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho */
+}
+
+/* Imágenes del carrusel */
+.movimiento img {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 60vh; /* Altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho */
+}
+
+/* Contenedor del texto */
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: white;
+    z-index: 2; /* Asegura que el texto esté por encima del fondo oscuro */
+    text-align: center;
+    font-family: "Open Sans", sans-serif; /* Aplica la fuente Open Sans */
+}
+
+/* Estilo del título (h2) */
+.texto h2 {
+    font-size: 3.5rem; /* Tamaño del h2 */
+    margin-bottom: 1.5rem; /* Espacio entre el h2 y el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra al texto */
+}
+
+/* Estilo del párrafo (p) */
+.texto p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra al texto */
+}
+
+/* Animación de deslizamiento del carrusel */
+@keyframes slide {
+    0%, 20% { margin-left: 0; }         /* Primera imagen */
+    25%, 45% { margin-left: -100vw; }   /* Segunda imagen */
+    50%, 70% { margin-left: -200vw; }   /* Tercera imagen */
+    75%, 100% { margin-left: 0; }       /* Regresa a la primera */
+}
+/* Termino Luis Taipe */
+
+/* nosotros */
+/* .barra ul li a:hover{
+    color: rgb(135, 115, 43);
+} */
+section h3{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+section p{
+    text-align: justify;
+    font-size: medium;
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+
+.visionymision{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    justify-content: space-between;
+}
+article h4{
+    text-align: center;
+    font-size: x-large;
+    margin-top: 25px;
+}
+.vision{
+    border: 2px solid rgb(18, 115, 120);
+    transition: transform 0.3s ease;
+    margin-right: 25px;
+    box-shadow: 2px 3px 2px;
+}
+.vision:hover{
+    transform: scale(1.1);
+}
+.mision{
+    border: 2px solid rgb(18, 115, 120);
+    transition: transform 0.3s ease;
+    margin-left: 35px;
+    box-shadow: 2px 3px 2px;
+}
+.mision:hover{
+    transform: scale(1.1);
+}
+
+/* servicios */
+
+.modal{
+    visibility:hidden ;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: ; */
+    transition: all 1s;
+}
+.modal-content{
+    padding: 20px;
+    position: relative;
+    width: 500px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+
+}
+.modal-content h2{
+    margin-top: 20px;
+}
+.modal-content p{
+    margin: 20px 0;
+}
+
+.modal-img img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgb(16, 120, 128);
+}
+close-btn {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 300spx;
+    height: 30px;
+    border-radius: 5px;
+    background:rgb(7, 155, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+close-btn a{
+    text-decoration: none;
+    font-weight: 800px;
+    font-size: 20px;
+}
+close-btn a:hover{
+    color: orange;
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+section div article{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* contactenos */
+.title1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pcontactanos{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.formu{
+    background-image: linear-gradient(rgb(60, 146, 161),rgb(112, 192, 206));
+    flex-direction: column;
+    padding: 50px;
+    width: 420px;
+    margin-left: 55px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.formu h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 35px;
+}
+.formu input{
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+.registro-mapa{
+    display: flex;
+    margin-bottom: 45px;
+    text-align: center;
+    margin-left: 45px;
+}
+.mapa{
+    margin-top: 30px;
+    margin-left: 55px;
+}
+.enviar{
+    background-color: rgb(19, 103, 109);
+    color: white;
+    padding: 7px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.enviar:hover{
+    background-color: rgb(68, 141, 151);
+    transform: scale(1.1);
+}
+.formulario{
+    margin-left: 85px;
+}
+
+/* productos */
+.subtitulos{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.comprar{
+    background-color: rgb(133, 187, 194);
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+.comprar:hover{
+    transform: scale(1.1);
+}
+.articulo{
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+.figuras{
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.descuento{
+    position: absolute;
+    top: 0px;
+    padding: 3px;
+    margin-left: 10px;
+    background-color: rgb(128, 219, 101);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    font-size: x-large;
+}
+.comprar{
+border-radius: 15px;
+background-color: rgb(42, 174, 148);
+color: black;
+margin-bottom: 5px;
+margin-left: 10px;
+padding: 6px;
+transition: padding 0.3s ease;
+transition: background-color 0.4s ease;
+transition: transform 0.4s ease;
+box-shadow: 2px 3px 2px;
+}
+button:hover{
+    transform: scale(1.3);
+    background-color: rgb(133, 240, 192);
+}
+article figcaption{
+    margin-left: 2px;
+}
+.producto{
+    color: red;
+    font-size: larger;
+}
+.tachado{
+    text-decoration: line-through;
+    color: grey;
+}
+.frasefinal{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(4, 68, 80);
+    font-size: xx-large;
+}
